@@ -24,6 +24,10 @@ $(".signup").click(function() {
   }, 1200);
 });
 
+$('.container').click(function() {
+  $('.container').toggleClass('.container:hover .overlay')
+})
+
   function slide_front_text() {
   $('#slider_text').slideUp(800, function() {
       $(this).text('A Fresh Beginning').slideDown(500).delay(2200);
