@@ -1,4 +1,4 @@
-#040065#040065#040065* {
+* {
    box-sizing: border-box;
    margin: auto;
 }
@@ -51,6 +51,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
+  margin-top: 8%;
 }
 
 .sliderText_content {
@@ -65,6 +66,7 @@ a {
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   font-family: 'Droid Sans', sans-serif;
   width: 100%;
+  margin: 4%;
 }
 
 
@@ -247,6 +249,7 @@ ul {
   flex-wrap: wrap;
   align-self: center;
   margin: auto;
+  margin-top: 2%;
 }
 
 .ish {
@@ -259,7 +262,8 @@ ul {
 }
 
 .ish img {
-  margin-left:1.2%;
+  margin: 4%;
+  margin-left: 5%;
 }
 
 /*STYLE TRY OVERLAY*/
@@ -348,6 +352,10 @@ ul {
     margin:4%;
   }
 
+  .down_arrow img {
+    margin-right: 2.5%;
+  }
+
   .set1 {
     width: 100%;
     display: flex;
@@ -356,7 +364,7 @@ ul {
   }
 
   .set1-content {
-    width: 40%;
+    width: 100%;
     margin-left: 4%;
     margin-right:4%;
   }
