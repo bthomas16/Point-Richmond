@@ -48,11 +48,16 @@ router.post('/send', function(req, res, next) {
   })
 
   var message = {
-    from:'Leasing Office <pointrichmondapartmentsleasing@gmail.com>',
-    to: 'pointrichmondapartments@gmail.com',
-    subject: 'Testing Node Emailer',
-    text: 'This is simply testing the submission form',
-    html: '<p> You got a new email with the following details:</p><ul><li></li>Name: '+req.body.fname+' <li>Email: '+req.body.email+'</li></ul>'
+    from:'Leasing Office <pointrichmondapartments@gmail.com>',
+    to: req.body.email,
+    subject: 'Point Richmond Apartments',
+    html: '<h3>Hello '+req.body.fname+',</h3> '+' <p> Thank you for subscribing to the Point Richmond Apartments. We are happy to have you on board!</p> '+' <p>The complex is currently under construction and we will be providing you throuhgout with pictures and information about leasing as well as community events.</p> <br> <h5>Sincerely,</h5> <br> <strong><p>The Point Richmond Apartment Team</p></strong>'
+    // html: 'Embedded image: <img src="cid:pointrichmondapartments@gmail.com"/>',
+    // attachments: [{
+    //     filename: 'thepoint.png',
+    //     path: '../public/images/',
+    //     cid: 'pointrichmondapartments@gmail.com' //same cid value as in the html img src
+    // }]
   }
 
   linkQuery.newSubscriber(req.body)
@@ -67,6 +72,14 @@ router.post('/send', function(req, res, next) {
     }
   })
 })
+})
+
+router.get('/database', function(req, res, next) {
+  knex('subscribers')
+    .select()
+    .then(subscriber => {
+      res.render('databaseSubscribers', { subscriber });
+    })
 })
 
 module.exports = router;
