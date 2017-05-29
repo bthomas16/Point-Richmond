@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer')
+var linkQuery = require('../db/linkQuery')
+const knex = require('../db/knex')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -36,6 +38,7 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/send', function(req, res, next) {
+
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -44,7 +47,7 @@ router.post('/send', function(req, res, next) {
     }
   })
 
-  var mailOptions = {
+  var message = {
     from:'John Doe <johndoe@gmail.com>',
     to: 'brentthomas.c@gmail.com',
     subject: 'Testing Node Emailer',
@@ -52,17 +55,18 @@ router.post('/send', function(req, res, next) {
     html: '<p> You got a new email with the following details:</p><ul><li></li>Name: '+req.body.fname+' <li>Email: '+req.body.email+'</li></ul>'
   }
 
-  transporter.sendMail(mailOptions, function(error, info) {
+  linkQuery.newSubscriber(req.body)
+.then(()=>{
+  transporter.sendMail(message, function(error, body) {
     if(error) {
       console.log(error);
       res.redirect('/')
     } else {
-      console.log('Message Sent '+ info.response);
+      console.log('Message Sent '+ body.response);
       res.redirect('/')
     }
   })
-
-
+})
 })
 
 module.exports = router;
