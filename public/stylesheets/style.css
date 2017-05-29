@@ -305,6 +305,10 @@ ul {
   opacity: 1;
 }
 
+.container:focus .overlay {
+  opacity: 1;
+}
+
 .text {
   color: white;
   font-size: 20px;
