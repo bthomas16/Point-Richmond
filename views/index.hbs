@@ -1,11 +1,13 @@
 <div id="top" class="front-page-wrapper">
   <div class="column1">
-    <div class="sliderText">
-      <h1 id="slider_text" class="sliderText_content">{{title}}</h1>
-    </div>
-    <div class="column2">
-      <p class="sliderText_content subtitle">{{subtitle}}</p>
-    </div>
+    <span>
+      <div class="sliderText">
+        <h1 id="slider_text" class="sliderText_content">{{title}}</h1>
+      </div>
+      <div class="column2">
+        <p class="sliderText_content subtitle">{{subtitle}}</p>
+      </div>
+    </span>
   </div>
   <div class="column2">
     <img class="logo" src="/images/thepoint.png" width="40%" alt="">
@@ -16,53 +18,40 @@
         <button class="form_content" type="submit" name="button">Submit</button>
         <p><em style="font-size:.4em">*We will not sell your email to any 3rd parties or send non-related advertisements to this account*</em></p>
     </form>
-    <a style="margin:auto" href="#images-info-wrapper"><h3>Learn More</h3></a>
-    <a href="#images-info-wrapper"><img style="margin:14px"src="/images/down_arrow.png" width="40%" alt=""></a>
+    <span class="down_arrow">
+      <a style="margin:auto" href="#images-info-wrapper"><h3>Learn More</h3></a>
+      <a href="#images-info-wrapper"><img style="margin:14px"src="/images/down_arrow.png" width="40%" alt=""></a>
+    </span>
   </div>
 </div>
 
-<!-- <ul class="demo-2 effect">
-  <li>
-     <h2 class="zero">This is a cool title!</h2>
-     <p class="zero">Lorem ipsum dolor sit amet.</p>
-  </li>
-  <li><img class="top" src="images/dining.jpeg" width="100%"alt=""/></li>
-</ul> -->
-
   <div class="images-info-wrapper" id="images-info-wrapper">
-      <div class="column-set">
-        <div class="photos set1_content_medium info-div">
-          <h4>The Point:</h4>
-          <p>Coming to Richmond, California in 2018. <em>The Point</em> will be a community located in the heart of Northern California offering endless activities, amenities and affordable lifestyles</p>
+    <div class="sets1-2-wrapper">
+      <div class="set1">
+          <div class="set1-content">
+              <h4>The Point Apartments:</h4>
+              <p>Coming to Richmond, California in 2018. <em>The Point</em> will be a community located in the heart of Northern California offering endless activities, amenities and affordable lifestyles</p>
+            </div>
+          <div class="set1-content">
+            <img src="/images/veggies.jpg" width="100%"alt="">
+          </div>
+      </div>
+        <div class="set2">
+            <img src="/images/food-share.jpg" alt="">
         </div>
-        <ul class="demo-2 effect set1_content_medium hideList">
-          <li>
-             <h2 class="zero">Conveniently Close Grocery Stores</h2>
-          </li>
-          <li><img class="top" src="/images/veggies.jpg" width="100%" alt=""/></li>
-        </ul>
+    </div>
+    <div class="set3-wrapper">
+      <div class="set3-content">
+          <img src="/images/social_drinks.jpeg" width="100%" alt="">
+        </div>
+        <div class="set3-content">
+          <img src="/images/records.jpg" width="100%" alt="">
+        </div>
+        <div class="set3-content">
+          This is an Info Div
       </div>
-      <ul class="demo-2 effect1 set1_content_tall hideList">
-        <li>
-           <h2 class="zero">World class dining around the corner</h2>
-        </li>
-        <li><img class="top" src="/images/food-share.jpg" alt=""/></li>
-      </ul>
-      <div class="column-set">
-        <ul class="demo-2 other-demo-style effect set1_content_medium hideList">
-          <li>
-             <h2 class="zero">At the center of your <em>Social Life</em></h2>
-          </li>
-          <li><img class="top" src="/images/social_drinks.jpeg" width="100%" alt=""/></li>
-        </ul>
-        <ul class="demo-2 other-demo-style1 effect set1_content_medium hideList">
-          <li>
-             <h2 class="zero">Local Shops are part of the community</h2>
-          </li>
-          <li><img class="top" src="/images/records.jpg" width="100%" alt=""/></li>
-        </ul>
-      </div>
-  </div>
+    </div>
+
 
   <div class="up-arrow-wrapper">
     <div class="ish">
@@ -72,3 +61,69 @@
       </a>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+  <!-- <div class="set">
+      <div class="set1_content_tall hideList">
+        <img class="top" src="/images/food-share.jpg" alt=""/>
+      </div>
+  </div>
+  <div class="set">
+
+  </div>
+  <div class="set">
+    <div class="set1_content_medium hideList">
+      <img class="top" src="/images/veggies.jpg" width="100%" alt=""/>
+    </div>
+  </div>
+  <div class="set set3">
+    <div class="set1_content_medium hideList">
+      <img class="top" src="/images/social_drinks.jpeg" width="100%" alt=""/>
+    </div>
+    <div class="set1_content_medium hideList">
+      <img class="top" src="/images/records.jpg" width="100%" alt=""/>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+  <!-- <ul class="demo-2 effect set1_content_medium hideList">
+    <li>
+       <h2 class="zero">Conveniently Close Grocery Stores</h2>
+    </li>
+    <li><img class="top" src="/images/veggies.jpg" width="100%" alt=""/></li>
+  </ul>
+</div>
+<ul class="demo-2 effect1 set1_content_tall hideList">
+  <li>
+     <h2 class="zero">World class dining around the corner</h2>
+  </li>
+  <li><img class="top" src="/images/food-share.jpg" alt=""/></li>
+</ul>
+<div class="column-set">
+  <ul class="demo-2 other-demo-style effect set1_content_medium hideList">
+    <li>
+       <h2 class="zero">At the center of your <em>Social Life</em></h2>
+    </li>
+    <li><img class="top" src="/images/social_drinks.jpeg" width="100%" alt=""/></li>
+  </ul>
+  <ul class="demo-2 other-demo-style1 effect set1_content_medium hideList">
+    <li>
+       <h2 class="zero">Local Shops are part of the community</h2>
+    </li>
+    <li><img class="top" src="/images/records.jpg" width="100%" alt=""/></li>
+  </ul> -->
+</div>
+<!-- </div> -->

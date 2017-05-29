@@ -14,16 +14,16 @@ $(document).ready(function() {
 
 })
 
-  // function slide_front_text() {
-  // $('#slider_text').slideUp(800, function() {
-  //     $(this).text('A Fresh Beginning').slideDown(500).delay(2200);
-  //     $(this).slideUp(1200, function() {
-  //       $(this).text("Upgraded Living").slideDown(500).delay(2200);
-  //       $(this).slideUp(1200, function() {
-  //         $(this).text("Point Richmond Apartments").slideDown(500).delay(5500);
-  //       });
-  //     });
-  // });
-
-
-}
+//   function slide_front_text() {
+//   $('#slider_text').slideUp(800, function() {
+//       $(this).text('A Fresh Beginning').slideDown(500).delay(2200);
+//       $(this).slideUp(1200, function() {
+//         $(this).text("Upgraded Living").slideDown(500).delay(2200);
+//         $(this).slideUp(1200, function() {
+//           $(this).text("Point Richmond Apartments").slideDown(500).delay(5500);
+//         });
+//       });
+//   });
+//
+//
+// }
