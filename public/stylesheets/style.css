@@ -1,0 +1,185 @@
+body {
+  margin: auto;
+}
+
+a {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+.front-page-wrapper {
+  width: 100%;
+  height: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column1 {
+  width: 65%;
+  height: 96vh;
+  margin: 1%;
+  background-image: url('/images/sf_bridge.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#slider_text {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sliderText {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 9%;
+}
+
+.sliderText_content {
+  font-size: 2.4em;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing:1px;
+}
+
+.subtitle {
+  font-size: 1.7em;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+
+.column2 {
+  width: 32%;
+  height: 96vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.column2 input {
+  width: 40%;
+}
+
+.column2 button {
+  width: 90%;
+}
+
+.column2 h3 {
+  width: 100%;
+  margin: auto;
+}
+
+.column2 h4 {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.5em;
+}
+
+.form img {
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+   -ms-transition: -ms-transform .8s ease-in-out;
+   transition: transform .8s ease-in-out;
+   width:40%;
+}
+.form img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.form_content {
+  margin: 2%;
+  text-align: center;
+}
+
+/*Images-Info_WrapperImages-Info_WrapperImages-Info_WrapperImages-Info_WrapperImages-Info_WrapperImages-Info_WrapperImages-Info_WrapperImages-Info_Wrapper*/
+
+.images-info-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.set1 {
+  width: 100%;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column-set {
+  width: 30%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.set1_content_medium {
+  width: 100%;
+  margin: 2%;
+}
+
+.info-div {
+  height:30vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.info-div h4 {
+  width: 100%;
+}
+
+.info-div p {
+  width: 100%;
+}
+
+.up-arrow-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  margin: auto;
+}
+
+.ish {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+.ish img {
+  margin-left:1.2%;
+}
+
+.set1_content_tall {
+  width: auto;
+  margin: 2%;
+}
+
+.set1_content_tall img {
+  max-height:64.5vh;
+}
+
+/*STYLE TRY OVERLAY*/
