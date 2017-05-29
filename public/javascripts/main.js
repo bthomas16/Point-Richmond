@@ -18,6 +18,12 @@ $(".up_arrow").click(function() {
   }, 1200);
 });
 
+$(".signup").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#email").offset().top
+  }, 1200);
+});
+
   function slide_front_text() {
   $('#slider_text').slideUp(800, function() {
       $(this).text('A Fresh Beginning').slideDown(500).delay(2200);
