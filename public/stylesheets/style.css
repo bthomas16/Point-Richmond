@@ -265,93 +265,7 @@ ul {
 
 /*STYLE TRY OVERLAY*/
 
-.demo-2 {
-    position:relative;
-    width:400px;
-    height:210px;
-    overflow:hidden;
-    float:left;
-    margin-right:20px;
-    background-color:rgba(26,76,110,0.5);
-    font-family: 'Roboto Slab', serif;
-}
 
-.other-demo-style {
-    position:relative;
-    width:400px;
-    height:195px;
-    overflow:hidden;
-    float:left;
-    margin-right:20px;
-    background-color:rgba(26,76,110,0.5);
-}
-
-.other-demo-style1 {
-    position:relative;
-    width:420px;
-    height:175px;
-    overflow:hidden;
-    float:left;
-    margin-right:20px;
-    background-color:rgba(26,76,110,0.5);
-}
-
-.demo-2 p,.demo-2 h2 {
-    color:#fff;
-    padding:10px;
-    left:-20px;
-    top:20px;
-    position:relative;
-}
-.demo-2 p {
-    font-family:'Lato';
-    font-size:12px;
-    line-height:18px;
-    margin:0
-}
-.demo-2 h2 {
-    font-size:20px;
-    line-height:24px;
-    margin:0;
-    font-family: 'Droid Sans', sans-serif;
-}
-.effect img {
-    position:absolute;
-    left:0;
-    bottom:0;
-    cursor:pointer;
-    margin:-12px 0;
-    -webkit-transition:bottom .3s ease-in-out;
-    -moz-transition:bottom .3s ease-in-out;
-    -o-transition:bottom .3s ease-in-out;
-    transition:bottom .3s ease-in-out;
-}
-.effect img.top:hover {
-    bottom:-96px;
-    padding-top:100px;
-}
-
-.effect1 img {
-    position:absolute;
-    left:0;
-    bottom:0;
-    cursor:pointer;
-    margin:-12px 0;
-    -webkit-transition:bottom .3s ease-in-out;
-    -moz-transition:bottom .3s ease-in-out;
-    -o-transition:bottom .3s ease-in-out;
-    transition:bottom .3s ease-in-out;
-}
-
-.effect1 img.top:hover {
-    bottom:-350px;
-    padding-top:100px;
-}
-
-h2.zero,p.zero {
-    margin:0;
-    padding:0;
-}
 
 .set1_content_tall {
   overflow:hidden;
@@ -364,20 +278,6 @@ h2.zero,p.zero {
 }
 
 @media (max-width:974px){
-  .demo-2 {
-      width:300px;
-      height:150px;
-  }
-
-  .other-demo-style {
-      width:300px;
-      height:155px;
-  }
-
-  .other-demo-style1 {
-      width:300px;
-      height:138px;
-  }
 
   .set1_content_tall {
     overflow:hidden;
@@ -431,20 +331,7 @@ h2.zero,p.zero {
 
 @media (max-width:700px) {
 
-  .demo-2 {
-      width:300px;
-      height:155px;
-  }
 
-  .other-demo-style {
-      width:300px;
-      height:155px;
-  }
-
-  .other-demo-style1 {
-      width:300px;
-      height:138px;
-  }
 
   .set1_content_tall {
     overflow:hidden;
@@ -472,7 +359,6 @@ h2.zero,p.zero {
   .set2 img {
     margin-top: 10%;
     margin-bottom:10%;
-    background: url(arrow.png) no-repeat;
    width:100%;
    -webkit-transform: rotate(270deg);
    -moz-transform: rotate(270deg);

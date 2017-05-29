@@ -6,24 +6,27 @@ $(document).ready(function() {
     $('overlay').toggleClass('active')
   })
 
-  $('.href').click(function(event){
-    console.log('poops');
-    event.preventDefault();
-    return false;
-  })
+  $(".down_arrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#images-info-wrapper").offset().top
+    }, 1000);
+});
 
+$(".up_arrow").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#email").offset().top
+  }, 1200);
+});
+
+  function slide_front_text() {
+  $('#slider_text').slideUp(800, function() {
+      $(this).text('A Fresh Beginning').slideDown(500).delay(2200);
+      $(this).slideUp(1200, function() {
+        $(this).text("Upgraded Living").slideDown(500).delay(2200);
+        $(this).slideUp(1200, function() {
+          $(this).text("Point Richmond Apartments").slideDown(500).delay(5500);
+        });
+      });
+  });
+};
 })
-
-//   function slide_front_text() {
-//   $('#slider_text').slideUp(800, function() {
-//       $(this).text('A Fresh Beginning').slideDown(500).delay(2200);
-//       $(this).slideUp(1200, function() {
-//         $(this).text("Upgraded Living").slideDown(500).delay(2200);
-//         $(this).slideUp(1200, function() {
-//           $(this).text("Point Richmond Apartments").slideDown(500).delay(5500);
-//         });
-//       });
-//   });
-//
-//
-// }
