@@ -8,6 +8,6 @@ module.exports = {
   },
   production: {
     client: 'postgresql',
-    connection: process.env.DATABASE_URL + '?ssl=true'
-      }
-};
+    connection: 'postgres://cljmudnkyitvoq:bc84a9cdd4b924b8f62de5f56b9b2c5b688844f19ab36899d67344ad262b8e62@ec2-54-163-246-154.compute-1.amazonaws.com:5432/dad7jdil7itoie'
+  }
+}
