@@ -42,14 +42,14 @@ router.post('/send', function(req, res, next) {
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'brentthomas.c@gmail.com',
-      pass: 'codeIsLife16'
+      user: 'pointrichmondapartments@gmail.com',
+      pass: 'thisispassword'
     }
   })
 
   var message = {
-    from:'John Doe <johndoe@gmail.com>',
-    to: 'brentthomas.c@gmail.com',
+    from:'Leasing Office <pointrichmondapartmentsleasing@gmail.com>',
+    to: 'pointrichmondapartments@gmail.com',
     subject: 'Testing Node Emailer',
     text: 'This is simply testing the submission form',
     html: '<p> You got a new email with the following details:</p><ul><li></li>Name: '+req.body.fname+' <li>Email: '+req.body.email+'</li></ul>'

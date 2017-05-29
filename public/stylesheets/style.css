@@ -51,7 +51,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 9%;
 }
 
 .sliderText_content {
@@ -230,7 +229,7 @@ a {
   border: 2px solid black;
   font-family: 'Droid Sans', sans-serif;
   background-color: rgba(245,240,208, .6);
-  padding: 1px;
+  padding: 10px;
 }
 
 .second-info-div {
@@ -277,7 +276,53 @@ ul {
   text-align: center;
 }
 
-@media (max-width:974px){
+
+/*OVERLAY - - - - OVERLAY - - - - OVERLAY - - - - OVERLAY - - - - OVERLAY - - - - */
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #040065;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 95%;
+  line-height: 35px;
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+
+/*Media Query */
+
+@media (max-width:1150px){
 
   .set1_content_tall {
     overflow:hidden;
@@ -298,13 +343,14 @@ ul {
   }
 
   .down_arrow {
-    margin: 5%;
+    margin:4%;
   }
 
   .set1 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin:auto;
   }
 
   .set1-content {
@@ -325,6 +371,12 @@ ul {
   }
   .set3-content img {
     border: 3px solid rgba(245,240,208, .6);
+  }
+
+  .text {
+    font-size: 1em;
+    width: 95%;
+    line-height: 30px;
   }
 
 }
@@ -357,22 +409,11 @@ ul {
   }
 
   .set2 img {
-    margin-top: 10%;
-    margin-bottom:10%;
-   width:100%;
-   -webkit-transform: rotate(270deg);
-   -moz-transform: rotate(270deg);
-   -ms-transform: rotate(270deg);
-   -o-transform: rotate(270deg);
-   transform: rotate(270deg);
+    width: 85%;
   }
 
   .set-content p {
     font-size: .7em;
-  }
-
-  .set3-wrapper {
-    margin-top:10%;
   }
 
   .set3-content {
@@ -388,4 +429,13 @@ ul {
   .set3-content img {
     border: 3px solid rgba(245,240,208, .6);
   }
+
+  .text {
+    font-size: 1em;
+  }
+}
+
+.signup {
+  text-decoration: underline;
+  color:rgba(255,255,255,.9);
 }
