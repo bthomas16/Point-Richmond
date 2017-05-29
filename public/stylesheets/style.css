@@ -293,7 +293,7 @@ ul {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right:0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -303,11 +303,9 @@ ul {
 
 .container:hover .overlay {
   opacity: 1;
+  border: 5px solid green;
 }
 
-.container:focus .overlay {
-  opacity: 1;
-}
 
 .text {
   color: white;
@@ -387,8 +385,6 @@ ul {
 
 @media (max-width:700px) {
 
-
-
   .set1_content_tall {
     overflow:hidden;
     height: 30vh;
@@ -410,10 +406,13 @@ ul {
   .set2 {;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 2%;
+    margin-top: auto;
   }
 
   .set2 img {
-    width: 85%;
+    width: 100%;
   }
 
   .set-content p {
@@ -436,6 +435,12 @@ ul {
 
   .text {
     font-size: 1em;
+  }
+}
+
+@media screen and (orientation:landscape) {
+  .set1{
+    /*margin-top: 50%;*/
   }
 }
 
