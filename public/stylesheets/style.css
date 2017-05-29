@@ -1,5 +1,10 @@
+* {
+   box-sizing: border-box;
+}
+
 body {
   margin: auto;
+  background-color: lightgrey;
 }
 
 a {
@@ -24,6 +29,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 5px solid rgba(245,240,208, .6);;
 }
 
 #slider_text {
@@ -64,16 +70,27 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .column2 input {
   width: 40%;
+  font-family: 'Droid Sans', sans-serif;
+  border: 1px solid black;
 }
 
 .column2 button {
   width: 90%;
+  font-size: 1.4em;
+  padding:5px;
+  font-family: 'Droid Sans', sans-serif;
+  border: 2px solid black;
 }
+
+.column2 button:hover {
+  cursor: pointer;
+}
+
 
 .column2 h3 {
   width: 100%;
@@ -84,19 +101,37 @@ a {
   font-family: 'Roboto Slab', serif;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
-.form img {
+.column2 img {
    -webkit-transition: -webkit-transform .8s ease-in-out;
    -ms-transition: -ms-transform .8s ease-in-out;
    transition: transform .8s ease-in-out;
    width:40%;
+   margin: auto;
 }
-.form img:hover {
+.logo:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+
+.form {
+  border: 2px solid black;
+  padding:10px;
+  background-color: rgba(245,240,208, .6);
+}
+
+.form input {
+  font-size: 1.2em;
+  padding:5px;
+}
+
+.form button {
+  background-color: rgba(24,110,25,.8);
+  color: white;
+}
+
 
 .form_content {
   margin: 2%;
@@ -141,14 +176,25 @@ a {
   flex-wrap: wrap;
   padding: 10px;
   border: 2px solid black;
+  background-color: rgba(245,240,208, .6);
 }
 
 .info-div h4 {
+  font-size: 2em;
+  text-decoration: underline;
   width: 100%;
+  margin: 1%;
+  font-family: 'Roboto Slab', serif;
 }
 
 .info-div p {
   width: 100%;
+  line-height: 25px;
+  font-family: 'droid sans', sans-serif;
+}
+
+ul {
+  border: 2px solid black;
 }
 
 .up-arrow-wrapper {
@@ -173,13 +219,102 @@ a {
   margin-left:1.2%;
 }
 
-.set1_content_tall {
-  width: auto;
-  margin: 2%;
-}
-
-.set1_content_tall img {
-  max-height:64.5vh;
-}
-
 /*STYLE TRY OVERLAY*/
+
+.demo-2 {
+    position:relative;
+    width:400px;
+    height:250px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5);
+      font-family: 'Roboto Slab', serif;
+}
+
+.other-demo-style {
+    position:relative;
+    width:400px;
+    height:210px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5);
+}
+
+.other-demo-style1 {
+    position:relative;
+    width:420px;
+    height:210px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5);
+}
+
+.demo-2 p,.demo-2 h2 {
+    color:#fff;
+    padding:10px;
+    left:-20px;
+    top:20px;
+    position:relative;
+}
+.demo-2 p {
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.demo-2 h2 {
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+    font-family: 'Droid Sans', sans-serif;
+}
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out;
+}
+.effect img.top:hover {
+    bottom:-96px;
+    padding-top:100px;
+}
+
+.effect1 img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out;
+}
+
+.effect1 img.top:hover {
+    bottom:-350px;
+    padding-top:100px;
+}
+
+h2.zero,p.zero {
+    margin:0;
+    padding:0;
+}
+
+.set1_content_tall {
+  overflow:hidden;
+  height: 480px;
+}
+
+.hideList {
+  list-style: none;
+  text-align: center;
+}
