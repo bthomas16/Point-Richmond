@@ -76,7 +76,7 @@ a {
   margin: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   text-align: center;
   font-family: 'Droid Sans', sans-serif;
@@ -182,6 +182,7 @@ a {
 .set1-content {
   text-align: center;
   width: 45%;
+  min-height: 40%;
   margin: 2%;
 }
 
@@ -191,6 +192,7 @@ a {
   width: 100%;
   font-family: 'Roboto Slab', serif;
   color: rgba(4,0,101,.9);
+  padding: 150px;
 }
 
 .set1-content img {
@@ -227,13 +229,6 @@ a {
   border: 3px solid rgba(245,240,208, .6);
 }
 
-.info-div {
-  border: 2px solid black;
-  font-family: 'Droid Sans', sans-serif;
-  background-color: rgba(245,240,208, .6);
-  padding: 10px;
-}
-
 .second-info-div {
   padding: 15px;
 }
@@ -262,8 +257,8 @@ ul {
 }
 
 .ish img {
-  margin: 4%;
-  margin-left: 5%;
+  margin: 1%;
+  margin-left: 2.5%;
 }
 
 /*STYLE TRY OVERLAY*/
@@ -295,7 +290,7 @@ ul {
 .overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom:0;
   left: 0;
   right:0;
   height: 100%;
@@ -307,13 +302,45 @@ ul {
 
 .container:hover .overlay {
   opacity: 1;
-  border: 5px solid green;
+  /*border: 5px solid green;*/
+  border: 5px solid rgba(245,240,208, .9);
 }
 
+.collage-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.collage-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .4%;
+}
+
+.info-div {
+  width: 10%;
+  font-size: 1.2em;
+  background-color: rgba(245,240,208, .6);
+}
+
+.collage-image img {
+  height: 26vh;
+  width: auto;
+}
+
+.border{
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+  width: 30%;
+}
 
 .text {
   color: white;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -322,8 +349,12 @@ ul {
   width: 95%;
   line-height: 35px;
   text-align: center;
+  font-size: .8em;
   font-family: 'Droid Sans', sans-serif;
 }
+
+
+
 
 
 /*Media Query */
@@ -349,38 +380,12 @@ ul {
   }
 
   .down_arrow {
-    margin:4%;
+    margin-top:4%;
   }
 
   .down_arrow img {
     margin-right: 2.5%;
-  }
-
-  .set1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin:auto;
-  }
-
-  .set1-content {
-    width: 100%;
-    margin-left: 4%;
-    margin-right:4%;
-  }
-
-  .set3-content {
-    width: 95%;
-  }
-
-  .set1-content img {
-      border: 3px solid rgba(245,240,208, .6);
-  }
-  .set2 img {
-      border: 3px solid rgba(245,240,208, .6);
-  }
-  .set3-content img {
-    border: 3px solid rgba(245,240,208, .6);
+    margin-top: 4%;
   }
 
   .text {
@@ -389,72 +394,70 @@ ul {
     line-height: 30px;
   }
 
+  .border {
+    width: 40%;
+    height: 26vh;
+    font-size: 1em;
+  }
+  a.signup {
+    font-size: 1.9em;
+    line-height: 50px;
+  }
+
 }
 
 @media (max-width:700px) {
 
-  .set1_content_tall {
-    overflow:hidden;
-    height: 30vh;
-    width: 80%;
-  }
-
-  .set1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .set1-content {
-    width: 100%;
-    margin-bottom:5%;
-    /*margin: 5%;*/
-  }
-
-  .set2 {;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2%;
-    margin-top: auto;
-  }
-
-  .set2 img {
-    width: 100%;
-  }
-
-  .set-content p {
-    font-size: .7em;
-  }
-
-  .set3-content {
-    width: 95%;
-  }
-
-  .set1-content img {
-      border: 3px solid rgba(245,240,208, .6);
-  }
-  .set2 img {
-      border: 3px solid rgba(245,240,208, .6);
-  }
-  .set3-content img {
-    border: 3px solid rgba(245,240,208, .6);
-  }
-
   .text {
-    font-size: 1em;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .border {
+    width: 77%;
+    height: 22vh;
+  }
+  .info-div p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  img.logo {
+    width: 30vw;
+  }
+
+  .collage-image img {
+    height: 15vh;
+    width: auto;
+  }
+
+  a.signup {
+    font-size: 1.6em;
+    line-height: 25px;
   }
 }
 
-@media screen and (orientation:landscape) {
-  .set1{
-    /*margin-top: 50%;*/
+@media (max-width: 450px) {
+  .collage-image img {
+    height: 17vh;
+    width: auto;
+  }
+  
+  .info-div p {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .text {
+    font-size: 8px;
+    line-height: 5px;
   }
 }
 
 .signup {
   text-decoration: underline;
   color:rgba(255,255,255,.9);
+  font-size: 3em;
+  font-family: 'droid sans', sans-serif;
+  line-height: 55px;
 }
 
 tr.dataRow {
