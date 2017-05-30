@@ -4,8 +4,9 @@
 }
 
 body {
-  margin: auto;
-  background-color: lightgrey;
+  background: #283c86; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #283c86, #45a247); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #283c86, #45a247); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
@@ -110,8 +111,7 @@ a {
 
 .column2 h4 {
   font-family: 'Roboto Slab', serif;
-  color: rgba(4,0,101,.9);
-  text-shadow: -1px 0 #040065, 0 1px #040065, 1px 0 #040065, 0 -1px #040065;
+  color: black;
   font-size: 2em;
 }
 
@@ -139,7 +139,7 @@ a {
 }
 
 .form button {
-  background-color: rgba(24,110,25,.8);
+  background-color: #3E8B55;
   color: white;
 }
 
@@ -426,29 +426,44 @@ ul {
   }
 
   .collage-image img {
-    height: 15vh;
+    height: 20vh;
     width: auto;
   }
 
   a.signup {
     font-size: 1.6em;
-    line-height: 25px;
+    line-height: 35px;
+  }
+
+  .text {
+    font-size: 1em;
+    line-height: 22px;
+  }
+
+  .info-div .text {
+    font-size: 2em;
+    line-height: 20px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 493px) {
+  .collage-image{
+    margin: 1.4%;
+  }
+
   .collage-image img {
     height: 17vh;
     width: auto;
   }
-  
-  .info-div p {
-    font-size: 11px;
-    line-height: 20px;
-  }
+
   .text {
-    font-size: 8px;
-    line-height: 5px;
+    font-size: .7em;
+    line-height: 16px;
+  }
+
+  .info-div .text {
+    font-size: 2em;
+    line-height: 20px;
   }
 }
 
