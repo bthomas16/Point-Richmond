@@ -245,7 +245,7 @@ img.img {
 }
 
 .info img {
-  width: 27.5vw;
+  height:28vh;
   transition: width .25s linear;
  -o-transition: width .25s linear;
  -moz-transition: width .25s linear;
@@ -315,8 +315,8 @@ img.img {
     width: 100%;
   }
 
-  img.img {
-
+  .info img {
+    width: 35.3vw;
   }
 
   .info {
@@ -330,11 +330,6 @@ img.img {
   .text {
     font-size: 10px;
     line-height: 15px;
-  }
-
-  .collage-image img {
-    height: 20vh;
-    width: auto;
   }
 
   .thePoint {
@@ -352,6 +347,19 @@ img.img {
   }
   .collage-wrapper {
     width: 100%;
+  }
+
+  .collage-image {
+    margin: 1%;
+  }
+
+  .collage-image img {
+    height: 20vh;
+    width: auto;
+  }
+
+  .info img {
+    width: 41.5vw;
   }
 }
 
@@ -388,6 +396,10 @@ img.img {
 
   img.logo {
     width: 22%;
+  }
+
+  .info img {
+    width: 44.6vw;
   }
 
 
