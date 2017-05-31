@@ -357,6 +357,10 @@ img.img {
 
 @media (max-width: 510px) {
 
+  body {
+    margin: .3%;
+  }
+
   .collage-image {
     margin: 2%;
   }
@@ -379,7 +383,7 @@ img.img {
   }
 
   .info img {
-    width: 44.7vw;
+    height: 100%;
   }
 
   img.logo {
