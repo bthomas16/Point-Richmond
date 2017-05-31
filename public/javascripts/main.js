@@ -24,6 +24,12 @@ $(".signup").click(function() {
   }, 1200);
 });
 
+$(".spinner").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#email").offset().top
+  }, 1200);
+});
+
 $('.container').click(function() {
   $('.container').toggleClass('.container:hover .overlay')
 })
