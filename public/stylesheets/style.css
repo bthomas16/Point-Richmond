@@ -245,7 +245,7 @@ img.img {
 }
 
 .info img {
-  height: 28vh;
+  width: 27.5vw;
   transition: width .25s linear;
  -o-transition: width .25s linear;
  -moz-transition: width .25s linear;
